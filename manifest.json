@@ -1,0 +1,45 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.16",
+  "version": "1.0.0",
+  "id": "your-bot-app-id-here",
+  "packageName": "com.yourcompany.translationbot",
+  "developer": {
+    "name": "Your Company",
+    "websiteUrl": "https://your-website.com",
+    "privacyUrl": "https://your-website.com/privacy",
+    "termsOfUseUrl": "https://your-website.com/terms"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Translation Bot",
+    "full": "English-Sinhala Translation Bot"
+  },
+  "description": {
+    "short": "Translate between English and Sinhala",
+    "full": "A simple bot that automatically translates text between English and Sinhala languages"
+  },
+  "accentColor": "#FFFFFF",
+  "bots": [
+    {
+      "botId": "your-bot-app-id-here",
+      "scopes": [
+        "personal",
+        "team",
+        "groupchat"
+      ],
+      "supportsFiles": false,
+      "isNotificationOnly": false
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "your-azure-app-service-url.azurewebsites.net"
+  ]
+}
